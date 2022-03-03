@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C10D758727C3F925000E8232 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D758627C3F925000E8232 /* ProfileViewController.swift */; };
+		C10D758927C443C8000E8232 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D758827C443C8000E8232 /* CommentViewController.swift */; };
+		C10D758B27C54B34000E8232 /* FitPostsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D758A27C54B34000E8232 /* FitPostsCollectionViewCell.swift */; };
+		C10D758D27C5EBA9000E8232 /* ProfilePostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D758C27C5EBA9000E8232 /* ProfilePostCollectionViewCell.swift */; };
+		C10D758F27C6110F000E8232 /* EditPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10D758E27C6110F000E8232 /* EditPostsViewController.swift */; };
+		C151BA7B27CD443E00406DD4 /* FoodPostsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151BA7A27CD443E00406DD4 /* FoodPostsCollectionViewCell.swift */; };
+		C151BA7D27CD4FA300406DD4 /* FoodCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151BA7C27CD4FA300406DD4 /* FoodCommentViewController.swift */; };
+		C151BA7F27CD5BAB00406DD4 /* NewFoodPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151BA7E27CD5BAB00406DD4 /* NewFoodPostViewController.swift */; };
+		C17DC5CA27D0570B000E619D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DC5C927D0570B000E619D /* DateExtension.swift */; };
+		C1A6F9E827BEDCBF00A23066 /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6F9E727BEDCBF00A23066 /* CloudError.swift */; };
+		C1A6F9EA27BEF5BF00A23066 /* FitPostListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6F9E927BEF5BF00A23066 /* FitPostListCollectionViewController.swift */; };
+		C1A6F9EE27C1E68000A23066 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6F9ED27C1E68000A23066 /* NewPostViewController.swift */; };
+		C1AF207527BAFD8900D3055F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF207427BAFD8900D3055F /* AppDelegate.swift */; };
+		C1AF207727BAFD8900D3055F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF207627BAFD8900D3055F /* SceneDelegate.swift */; };
+		C1AF207C27BAFD8900D3055F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AF207A27BAFD8900D3055F /* Main.storyboard */; };
+		C1AF207E27BAFD8A00D3055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1AF207D27BAFD8A00D3055F /* Assets.xcassets */; };
+		C1AF208D27BAFDF700D3055F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AF208C27BAFDF700D3055F /* CloudKit.framework */; };
+		C1AF208F27BB178300D3055F /* PostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AF208E27BB178300D3055F /* PostList.storyboard */; };
+		C1AF209627BB2D4100D3055F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF209527BB2D4100D3055F /* User.swift */; };
+		C1AF209827BB399000D3055F /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF209727BB399000D3055F /* UserController.swift */; };
+		C1AF209A27BB600400D3055F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF209927BB600400D3055F /* SignUpViewController.swift */; };
+		C1AF209C27BB73DF00D3055F /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF209B27BB73DF00D3055F /* PhotoPickerViewController.swift */; };
+		C1AF209F27BC747C00D3055F /* PhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AF209D27BC747C00D3055F /* PhotoPicker.storyboard */; };
+		C1AF20A127BD8E6100D3055F /* FitPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF20A027BD8E6100D3055F /* FitPost.swift */; };
+		C1AF20A327BDBB1000D3055F /* FitPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF20A227BDBB1000D3055F /* FitPostController.swift */; };
+		C1B3F92A27CCAE62006089D1 /* FoodPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3F92927CCAE62006089D1 /* FoodPost.swift */; };
+		C1B3F92C27CCB10D006089D1 /* FoodPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3F92B27CCB10D006089D1 /* FoodPostController.swift */; };
+		C1B3F92E27CD38FB006089D1 /* FoodPostListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3F92D27CD38FB006089D1 /* FoodPostListCollectionViewController.swift */; };
+		C1E31B6727C370A900072179 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E31B6627C370A900072179 /* Comment.swift */; };
+		C1E31B6927C376C400072179 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E31B6827C376C400072179 /* Design.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C10D758627C3F925000E8232 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C10D758827C443C8000E8232 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		C10D758A27C54B34000E8232 /* FitPostsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPostsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C10D758C27C5EBA9000E8232 /* ProfilePostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostCollectionViewCell.swift; sourceTree = "<group>"; };
+		C10D758E27C6110F000E8232 /* EditPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostsViewController.swift; sourceTree = "<group>"; };
+		C151BA7A27CD443E00406DD4 /* FoodPostsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPostsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C151BA7C27CD4FA300406DD4 /* FoodCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCommentViewController.swift; sourceTree = "<group>"; };
+		C151BA7E27CD5BAB00406DD4 /* NewFoodPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFoodPostViewController.swift; sourceTree = "<group>"; };
+		C17DC5C927D0570B000E619D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		C1A6F9E727BEDCBF00A23066 /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
+		C1A6F9E927BEF5BF00A23066 /* FitPostListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPostListCollectionViewController.swift; sourceTree = "<group>"; };
+		C1A6F9ED27C1E68000A23066 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		C1AF207127BAFD8900D3055F /* HealthHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AF207427BAFD8900D3055F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1AF207627BAFD8900D3055F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C1AF207B27BAFD8900D3055F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1AF207D27BAFD8A00D3055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1AF208227BAFD8A00D3055F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1AF208A27BAFDEE00D3055F /* HealthHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthHub.entitlements; sourceTree = "<group>"; };
+		C1AF208C27BAFDF700D3055F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C1AF208E27BB178300D3055F /* PostList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostList.storyboard; sourceTree = "<group>"; };
+		C1AF209527BB2D4100D3055F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C1AF209727BB399000D3055F /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		C1AF209927BB600400D3055F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C1AF209B27BB73DF00D3055F /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		C1AF209E27BC747C00D3055F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HealthHub/Storyboards/Base.lproj/PhotoPicker.storyboard; sourceTree = "<group>"; };
+		C1AF20A027BD8E6100D3055F /* FitPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPost.swift; sourceTree = "<group>"; };
+		C1AF20A227BDBB1000D3055F /* FitPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPostController.swift; sourceTree = "<group>"; };
+		C1B3F92927CCAE62006089D1 /* FoodPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPost.swift; sourceTree = "<group>"; };
+		C1B3F92B27CCB10D006089D1 /* FoodPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPostController.swift; sourceTree = "<group>"; };
+		C1B3F92D27CD38FB006089D1 /* FoodPostListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPostListCollectionViewController.swift; sourceTree = "<group>"; };
+		C1E31B6627C370A900072179 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		C1E31B6827C376C400072179 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1AF206E27BAFD8900D3055F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AF208D27BAFDF700D3055F /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1AF206827BAFD8900D3055F = {
+			isa = PBXGroup;
+			children = (
+				C1AF207327BAFD8900D3055F /* HealthHub */,
+				C1AF207227BAFD8900D3055F /* Products */,
+				C1AF208B27BAFDF700D3055F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1AF207227BAFD8900D3055F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF207127BAFD8900D3055F /* HealthHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1AF207327BAFD8900D3055F /* HealthHub */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF208A27BAFDEE00D3055F /* HealthHub.entitlements */,
+				C1AF208927BAFDCE00D3055F /* Storyboards */,
+				C1AF209027BB269A00D3055F /* Models */,
+				C1AF209127BB26A000D3055F /* ModelControllers */,
+				C1AF209227BB26A900D3055F /* ViewControllers */,
+				C1AF208827BAFDB400D3055F /* Resources */,
+			);
+			path = HealthHub;
+			sourceTree = "<group>";
+		};
+		C1AF208827BAFDB400D3055F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF207427BAFD8900D3055F /* AppDelegate.swift */,
+				C1AF207627BAFD8900D3055F /* SceneDelegate.swift */,
+				C1AF207D27BAFD8A00D3055F /* Assets.xcassets */,
+				C1AF208227BAFD8A00D3055F /* Info.plist */,
+				C1E31B6827C376C400072179 /* Design.swift */,
+				C17DC5C927D0570B000E619D /* DateExtension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1AF208927BAFDCE00D3055F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF207A27BAFD8900D3055F /* Main.storyboard */,
+				C1AF208E27BB178300D3055F /* PostList.storyboard */,
+				C1AF209D27BC747C00D3055F /* PhotoPicker.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C1AF208B27BAFDF700D3055F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF208C27BAFDF700D3055F /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1AF209027BB269A00D3055F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3F92927CCAE62006089D1 /* FoodPost.swift */,
+				C1AF20A027BD8E6100D3055F /* FitPost.swift */,
+				C1E31B6627C370A900072179 /* Comment.swift */,
+				C1AF209527BB2D4100D3055F /* User.swift */,
+				C1A6F9E727BEDCBF00A23066 /* CloudError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1AF209127BB26A000D3055F /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3F92B27CCB10D006089D1 /* FoodPostController.swift */,
+				C1AF20A227BDBB1000D3055F /* FitPostController.swift */,
+				C1AF209727BB399000D3055F /* UserController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		C1AF209227BB26A900D3055F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF209927BB600400D3055F /* SignUpViewController.swift */,
+				C1AF209B27BB73DF00D3055F /* PhotoPickerViewController.swift */,
+				C1A6F9E927BEF5BF00A23066 /* FitPostListCollectionViewController.swift */,
+				C10D758A27C54B34000E8232 /* FitPostsCollectionViewCell.swift */,
+				C10D758827C443C8000E8232 /* CommentViewController.swift */,
+				C1A6F9ED27C1E68000A23066 /* NewPostViewController.swift */,
+				C1B3F92D27CD38FB006089D1 /* FoodPostListCollectionViewController.swift */,
+				C151BA7A27CD443E00406DD4 /* FoodPostsCollectionViewCell.swift */,
+				C151BA7C27CD4FA300406DD4 /* FoodCommentViewController.swift */,
+				C151BA7E27CD5BAB00406DD4 /* NewFoodPostViewController.swift */,
+				C10D758627C3F925000E8232 /* ProfileViewController.swift */,
+				C10D758C27C5EBA9000E8232 /* ProfilePostCollectionViewCell.swift */,
+				C10D758E27C6110F000E8232 /* EditPostsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1AF207027BAFD8900D3055F /* HealthHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AF208527BAFD8A00D3055F /* Build configuration list for PBXNativeTarget "HealthHub" */;
+			buildPhases = (
+				C1AF206D27BAFD8900D3055F /* Sources */,
+				C1AF206E27BAFD8900D3055F /* Frameworks */,
+				C1AF206F27BAFD8900D3055F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthHub;
+			productName = HealthHub;
+			productReference = C1AF207127BAFD8900D3055F /* HealthHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1AF206927BAFD8900D3055F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C1AF207027BAFD8900D3055F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C1AF206C27BAFD8900D3055F /* Build configuration list for PBXProject "HealthHub" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1AF206827BAFD8900D3055F;
+			productRefGroup = C1AF207227BAFD8900D3055F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1AF207027BAFD8900D3055F /* HealthHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1AF206F27BAFD8900D3055F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AF207E27BAFD8A00D3055F /* Assets.xcassets in Resources */,
+				C1AF209F27BC747C00D3055F /* PhotoPicker.storyboard in Resources */,
+				C1AF207C27BAFD8900D3055F /* Main.storyboard in Resources */,
+				C1AF208F27BB178300D3055F /* PostList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1AF206D27BAFD8900D3055F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C151BA7B27CD443E00406DD4 /* FoodPostsCollectionViewCell.swift in Sources */,
+				C1A6F9EE27C1E68000A23066 /* NewPostViewController.swift in Sources */,
+				C1B3F92C27CCB10D006089D1 /* FoodPostController.swift in Sources */,
+				C1AF207527BAFD8900D3055F /* AppDelegate.swift in Sources */,
+				C1AF207727BAFD8900D3055F /* SceneDelegate.swift in Sources */,
+				C1AF209827BB399000D3055F /* UserController.swift in Sources */,
+				C10D758F27C6110F000E8232 /* EditPostsViewController.swift in Sources */,
+				C151BA7D27CD4FA300406DD4 /* FoodCommentViewController.swift in Sources */,
+				C10D758727C3F925000E8232 /* ProfileViewController.swift in Sources */,
+				C151BA7F27CD5BAB00406DD4 /* NewFoodPostViewController.swift in Sources */,
+				C10D758927C443C8000E8232 /* CommentViewController.swift in Sources */,
+				C17DC5CA27D0570B000E619D /* DateExtension.swift in Sources */,
+				C10D758D27C5EBA9000E8232 /* ProfilePostCollectionViewCell.swift in Sources */,
+				C1AF209627BB2D4100D3055F /* User.swift in Sources */,
+				C1B3F92A27CCAE62006089D1 /* FoodPost.swift in Sources */,
+				C1AF209A27BB600400D3055F /* SignUpViewController.swift in Sources */,
+				C1AF209C27BB73DF00D3055F /* PhotoPickerViewController.swift in Sources */,
+				C1E31B6727C370A900072179 /* Comment.swift in Sources */,
+				C1AF20A127BD8E6100D3055F /* FitPost.swift in Sources */,
+				C1A6F9EA27BEF5BF00A23066 /* FitPostListCollectionViewController.swift in Sources */,
+				C10D758B27C54B34000E8232 /* FitPostsCollectionViewCell.swift in Sources */,
+				C1B3F92E27CD38FB006089D1 /* FoodPostListCollectionViewController.swift in Sources */,
+				C1E31B6927C376C400072179 /* Design.swift in Sources */,
+				C1AF20A327BDBB1000D3055F /* FitPostController.swift in Sources */,
+				C1A6F9E827BEDCBF00A23066 /* CloudError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1AF207A27BAFD8900D3055F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AF207B27BAFD8900D3055F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1AF209D27BC747C00D3055F /* PhotoPicker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AF209E27BC747C00D3055F /* Base */,
+			);
+			name = PhotoPicker.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1AF208327BAFD8A00D3055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1AF208427BAFD8A00D3055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1AF208627BAFD8A00D3055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthHub/HealthHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VF7NYHSY56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthHub/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Carlotta.HealthHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1AF208727BAFD8A00D3055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthHub/HealthHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VF7NYHSY56;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthHub/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Carlotta.HealthHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1AF206C27BAFD8900D3055F /* Build configuration list for PBXProject "HealthHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AF208327BAFD8A00D3055F /* Debug */,
+				C1AF208427BAFD8A00D3055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AF208527BAFD8A00D3055F /* Build configuration list for PBXNativeTarget "HealthHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AF208627BAFD8A00D3055F /* Debug */,
+				C1AF208727BAFD8A00D3055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1AF206927BAFD8900D3055F /* Project object */;
+}

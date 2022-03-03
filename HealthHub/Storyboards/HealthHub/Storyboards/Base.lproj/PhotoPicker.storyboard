@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bA3-Ea-LPu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Picker View Controller-->
+        <scene sceneID="f3R-Jv-ZlQ">
+            <objects>
+                <viewController id="bA3-Ea-LPu" customClass="PhotoPickerViewController" customModule="HealthHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mRo-hj-tPR">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="397"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-xS-f6o">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="397"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="tintColor" red="0.68702902440000002" green="0.81936009600000004" blue="0.96352505749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXO-h3-2ke">
+                                <rect key="frame" x="20" y="44" width="360" height="353"/>
+                                <color key="tintColor" red="0.68627450980000004" green="0.81936009600000004" blue="0.96352505749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="selectPhotoButtonTapped:" destination="bA3-Ea-LPu" eventType="touchUpInside" id="cGe-3X-EIi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lVX-ha-0hV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tXO-h3-2ke" firstAttribute="top" secondItem="mRo-hj-tPR" secondAttribute="topMargin" id="GVE-X7-Cbc"/>
+                            <constraint firstItem="tXO-h3-2ke" firstAttribute="leading" secondItem="mRo-hj-tPR" secondAttribute="leadingMargin" id="JyX-sq-Ffi"/>
+                            <constraint firstItem="Dln-xS-f6o" firstAttribute="leading" secondItem="mRo-hj-tPR" secondAttribute="leading" id="Naa-eC-dci"/>
+                            <constraint firstAttribute="bottom" secondItem="Dln-xS-f6o" secondAttribute="bottom" id="TVT-Wy-CI4"/>
+                            <constraint firstAttribute="trailing" secondItem="Dln-xS-f6o" secondAttribute="trailing" id="V4z-jf-eaG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tXO-h3-2ke" secondAttribute="bottom" id="eCr-fH-oDt"/>
+                            <constraint firstItem="Dln-xS-f6o" firstAttribute="top" secondItem="mRo-hj-tPR" secondAttribute="top" id="eIm-0g-ufz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tXO-h3-2ke" secondAttribute="trailing" id="hcf-P9-j2s"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="400" height="397"/>
+                    <connections>
+                        <outlet property="photoImageView" destination="Dln-xS-f6o" id="ENA-hJ-EIN"/>
+                        <outlet property="selectPhotoButton" destination="tXO-h3-2ke" id="19M-1T-ur0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFu-zd-WE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002.8985507246377" y="108.81696428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

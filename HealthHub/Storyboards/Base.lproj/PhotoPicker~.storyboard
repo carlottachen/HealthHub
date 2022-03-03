@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R4g-wM-IK0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Dza-ft-np2">
+            <objects>
+                <viewController id="R4g-wM-IK0" customClass="SignUpViewController" customModule="HealthHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ocY-Vg-L66">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cky-KZ-4AQ">
+                                <rect key="frame" x="40" y="242" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cky-KZ-4AQ" secondAttribute="height" multiplier="1:1" id="yKf-0o-LbF"/>
+                                    <constraint firstAttribute="width" constant="200" id="zrM-DN-Oxo"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="bA3-Ea-LPu" kind="embed" identifier="photoPickerVC" id="pIp-EW-Qt8"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7wV-tp-xgG">
+                                <rect key="frame" x="41.5" y="492" width="331" height="129.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username will be visible to others" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUO-Bh-r4X">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yvv-zu-Pa5">
+                                        <rect key="frame" x="0.0" y="44.5" width="331" height="34"/>
+                                        <color key="backgroundColor" red="0.81311268214323917" green="0.90639166941896376" blue="0.96352505746563055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ptk-BU-InM">
+                                        <rect key="frame" x="0.0" y="98.5" width="331" height="31"/>
+                                        <color key="backgroundColor" red="0.68627450980000004" green="0.81936009600000004" blue="0.96352505749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Log In!" cornerStyle="medium"/>
+                                        <connections>
+                                            <action selector="signupButtonTapped:" destination="R4g-wM-IK0" eventType="touchUpInside" id="kvD-GA-cxw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Yvv-zu-Pa5" firstAttribute="leading" secondItem="7wV-tp-xgG" secondAttribute="leading" id="M5e-dR-XTt"/>
+                                    <constraint firstAttribute="trailing" secondItem="rUO-Bh-r4X" secondAttribute="trailing" id="MWI-K3-qjK"/>
+                                    <constraint firstItem="Ptk-BU-InM" firstAttribute="leading" secondItem="7wV-tp-xgG" secondAttribute="leading" id="W8F-zA-hqF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ptk-BU-InM" secondAttribute="bottom" id="WQd-CV-aW0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ptk-BU-InM" secondAttribute="trailing" id="XRk-40-HNX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yvv-zu-Pa5" secondAttribute="trailing" id="d3h-3Z-Shc"/>
+                                    <constraint firstItem="rUO-Bh-r4X" firstAttribute="top" secondItem="7wV-tp-xgG" secondAttribute="top" id="gpu-PP-jPG"/>
+                                    <constraint firstItem="rUO-Bh-r4X" firstAttribute="leading" secondItem="7wV-tp-xgG" secondAttribute="leading" id="y6v-51-aSo"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HealthHub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-84-I1J">
+                                <rect key="frame" x="41.5" y="94" width="331" height="68"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Bd-we-JrY"/>
+                        <color key="backgroundColor" red="0.68627450980392157" green="0.81960784313725488" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cky-KZ-4AQ" firstAttribute="top" secondItem="XMG-84-I1J" secondAttribute="bottom" constant="80" id="5yv-uG-QfS"/>
+                            <constraint firstItem="7wV-tp-xgG" firstAttribute="centerX" secondItem="1Bd-we-JrY" secondAttribute="centerX" id="Di4-hz-ceX"/>
+                            <constraint firstItem="7wV-tp-xgG" firstAttribute="top" secondItem="cky-KZ-4AQ" secondAttribute="bottom" constant="50" id="Rg2-Pg-2pz"/>
+                            <constraint firstItem="XMG-84-I1J" firstAttribute="top" secondItem="1Bd-we-JrY" secondAttribute="top" constant="50" id="VUX-t9-qWQ"/>
+                            <constraint firstItem="7wV-tp-xgG" firstAttribute="width" secondItem="ocY-Vg-L66" secondAttribute="width" multiplier="0.8" id="osz-U0-7nN"/>
+                            <constraint firstItem="XMG-84-I1J" firstAttribute="width" secondItem="ocY-Vg-L66" secondAttribute="width" multiplier="0.8" id="ra5-QC-tx6"/>
+                            <constraint firstItem="XMG-84-I1J" firstAttribute="centerX" secondItem="1Bd-we-JrY" secondAttribute="centerX" id="wuu-oU-Viu"/>
+                            <constraint firstItem="cky-KZ-4AQ" firstAttribute="leading" secondItem="1Bd-we-JrY" secondAttribute="leading" constant="40" id="z66-WO-Eeg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoContainerView" destination="cky-KZ-4AQ" id="Llb-X0-4m5"/>
+                        <outlet property="usernameTextField" destination="Yvv-zu-Pa5" id="oEh-FF-tRc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVc-hF-hu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="108"/>
+        </scene>
+        <!--Photo Picker View Controller-->
+        <scene sceneID="f3R-Jv-ZlQ">
+            <objects>
+                <viewController id="bA3-Ea-LPu" customClass="PhotoPickerViewController" customModule="HealthHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mRo-hj-tPR">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-xS-f6o">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXO-h3-2ke">
+                                <rect key="frame" x="16" y="44" width="168" height="156"/>
+                                <color key="tintColor" red="0.68627450980000004" green="0.81936009600000004" blue="0.96352505749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Upload Image"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tXO-h3-2ke" firstAttribute="top" secondItem="mRo-hj-tPR" secondAttribute="topMargin" id="GVE-X7-Cbc"/>
+                            <constraint firstItem="tXO-h3-2ke" firstAttribute="leading" secondItem="mRo-hj-tPR" secondAttribute="leadingMargin" id="JyX-sq-Ffi"/>
+                            <constraint firstItem="Dln-xS-f6o" firstAttribute="leading" secondItem="mRo-hj-tPR" secondAttribute="leading" id="Naa-eC-dci"/>
+                            <constraint firstAttribute="bottom" secondItem="Dln-xS-f6o" secondAttribute="bottom" id="TVT-Wy-CI4"/>
+                            <constraint firstAttribute="trailing" secondItem="Dln-xS-f6o" secondAttribute="trailing" id="V4z-jf-eaG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tXO-h3-2ke" secondAttribute="bottom" id="eCr-fH-oDt"/>
+                            <constraint firstItem="Dln-xS-f6o" firstAttribute="top" secondItem="mRo-hj-tPR" secondAttribute="top" id="eIm-0g-ufz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tXO-h3-2ke" secondAttribute="trailing" id="hcf-P9-j2s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFu-zd-WE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
