@@ -25,14 +25,13 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = self.view.frame.width / 3.2
+        let width = self.view.frame.width / 3.175
         let height = width
         return CGSize(width: width, height: height)
     }
     
     
     @IBOutlet weak var displayProfileImage: UIImageView!
-    @IBOutlet weak var profileImageView: UIView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     var profilePhoto: UIImage?
@@ -68,9 +67,6 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     func setupViews() {
         displayProfileImage.layer.cornerRadius = displayProfileImage.frame.height / 2
         displayProfileImage.clipsToBounds = true
-        
-        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
-        profileImageView.clipsToBounds = true
 
         let username = UserController.shared.currentUser?.username
         let image = UserController.shared.currentUser?.profilePhoto

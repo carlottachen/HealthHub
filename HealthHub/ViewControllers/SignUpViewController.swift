@@ -57,10 +57,12 @@ class SignUpViewController: UIViewController {
     }
     
     func usernameTakenAlert() {
-        let alert = UIAlertController(title: "Username unavailable!", message: "Sorry, that username is taken! Please try another one.", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .cancel)
-        alert.addAction(okAction)
-        self.present(alert, animated: true)
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Username unavailable!", message: "Sorry, that username is taken! Please try another one.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .cancel)
+            alert.addAction(okAction)
+            self.present(alert, animated: true)
+        }
     }
     
     func presentPostsVC() {

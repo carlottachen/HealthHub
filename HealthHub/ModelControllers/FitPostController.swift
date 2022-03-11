@@ -192,7 +192,8 @@ class FitPostController {
                     operation = nextOperation
                     self.publicDB.add(nextOperation)
                 } else {
-                    return completion(.success(fetchedPosts))
+                    let sortedPosts = fetchedPosts.sorted(by: { $0.timestamp > $1.timestamp })
+                    return completion(.success(sortedPosts))
                 }
             case .failure(let error):
                 return completion(.failure(.ckError(error)))

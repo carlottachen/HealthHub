@@ -37,9 +37,6 @@ class UserController {
         }
     }
     
-    func updatePhoto(_ user: User, completion: @escaping (Result<User, CloudError>) -> Void) {
-    }
-    
     func update(_ user: User, completion: @escaping (Result<String, CloudError>) -> Void) {
         let record = CKRecord(user: user)
         

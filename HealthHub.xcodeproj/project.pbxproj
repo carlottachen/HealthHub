@@ -16,6 +16,7 @@
 		C151BA7D27CD4FA300406DD4 /* FoodCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151BA7C27CD4FA300406DD4 /* FoodCommentViewController.swift */; };
 		C151BA7F27CD5BAB00406DD4 /* NewFoodPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C151BA7E27CD5BAB00406DD4 /* NewFoodPostViewController.swift */; };
 		C17DC5CA27D0570B000E619D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DC5C927D0570B000E619D /* DateExtension.swift */; };
+		C17DC5CC27D15011000E619D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DC5CB27D15011000E619D /* SettingsViewController.swift */; };
 		C1A6F9E827BEDCBF00A23066 /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6F9E727BEDCBF00A23066 /* CloudError.swift */; };
 		C1A6F9EA27BEF5BF00A23066 /* FitPostListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6F9E927BEF5BF00A23066 /* FitPostListCollectionViewController.swift */; };
 		C1A6F9EE27C1E68000A23066 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6F9ED27C1E68000A23066 /* NewPostViewController.swift */; };
@@ -49,6 +50,7 @@
 		C151BA7C27CD4FA300406DD4 /* FoodCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCommentViewController.swift; sourceTree = "<group>"; };
 		C151BA7E27CD5BAB00406DD4 /* NewFoodPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFoodPostViewController.swift; sourceTree = "<group>"; };
 		C17DC5C927D0570B000E619D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		C17DC5CB27D15011000E619D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C1A6F9E727BEDCBF00A23066 /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
 		C1A6F9E927BEF5BF00A23066 /* FitPostListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPostListCollectionViewController.swift; sourceTree = "<group>"; };
 		C1A6F9ED27C1E68000A23066 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				C10D758627C3F925000E8232 /* ProfileViewController.swift */,
 				C10D758C27C5EBA9000E8232 /* ProfilePostCollectionViewCell.swift */,
 				C10D758E27C6110F000E8232 /* EditPostsViewController.swift */,
+				C17DC5CB27D15011000E619D /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				C10D758B27C54B34000E8232 /* FitPostsCollectionViewCell.swift in Sources */,
 				C1B3F92E27CD38FB006089D1 /* FoodPostListCollectionViewController.swift in Sources */,
 				C1E31B6927C376C400072179 /* Design.swift in Sources */,
+				C17DC5CC27D15011000E619D /* SettingsViewController.swift in Sources */,
 				C1AF20A327BDBB1000D3055F /* FitPostController.swift in Sources */,
 				C1A6F9E827BEDCBF00A23066 /* CloudError.swift in Sources */,
 			);
